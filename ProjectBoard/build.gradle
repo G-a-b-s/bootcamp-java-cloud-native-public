@@ -1,0 +1,25 @@
+plugins {
+    id 'application'
+}
+application {
+    mainClass = 'br.com.dio.Main'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.liquibase:liquibase-core:4.24.0'
+    implementation 'org.xerial:sqlite-jdbc:3.45.3.0'
+    compileOnly 'org.projectlombok:lombok:1.18.28'
+    annotationProcessor 'org.projectlombok:lombok:1.18.28'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+test {
+    useJUnitPlatform()
+}
