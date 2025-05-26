@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public final class DatabaseManager {
 
-    private static final String DB_PATH = "/Users/gabrielrocha/development/Board/identifier.sqlite";
+    private static final String DB_PATH = "identifier.sqlite";
     @Getter
     private static Connection connection;
 
